@@ -1,0 +1,391 @@
+<html>
+<head>
+<title>Loops</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Iterative Control Structure</h1>
+
+<h2>Question 2</h2>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void main()
+{
+int n,i,j,p,x=0;
+clrscr();
+printf("Enter a number: ");
+scanf("%d",&n);
+for(i=2;i&lt;n;i++)
+{
+p=1;
+for(j=2;j&lt;i;j++)
+{
+if(i%j==0)
+{
+p=0;
+break;
+}
+}
+if(p==1 &amp;&amp; n%i==0)
+{
+x=1;
+printf("divisible by %d",i);
+break;
+}
+}
+if(x==0)
+printf("not divisible by any small prime no");
+delay(5000);
+}
+</pre>
+<img src="questions images/iterative control structure/2i.jpg" width="400">
+<hr>
+<h2>Question 3</h2>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void main()
+{
+int n,i;
+x=0;
+clrscr();
+printf("enter one number: ");
+scanf("%d",&n);
+for(i=2;i&lt;n;i++)
+{
+if(n%i==0)
+{
+x=1;
+break;
+}
+}
+if(n&lt;=1)
+printf("Non prime number");
+else if(x==0)
+printf("prime number");
+else
+printf("Not a prime number");
+delay(5000);
+}
+</pre>
+<img src="questions images/iterative control structure/3i.jpg" width="400">
+<hr>
+<h2>Question 4</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+int n,a[20],i=0,j;
+clrscr();
+printf("Enter a number: ");
+scanf("%d",&n);
+if(n<0)
+n=-n;
+if(n==0)
+printf("0");
+while(n>0)
+{
+a[i]=n%10;
+n=n/10;
+i++;
+}
+for(j=0;j<i;j++)
+printf("%d\n",a[j]);
+delay(5000);
+}
+</pre>
+<img src="questions images/iterative control structure/4i.jpg" width="400">
+<hr>
+<h2>Question 5</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+int i;
+clrscr();
+for(i=1;i<=100000;i++)
+{
+printf("Aindri\n");
+i++;
+}
+delay(5000);
+}
+</pre>
+<img src="questions images/iterative control structure/5i.PNG" width="400">
+<hr>
+<h2>Question 6</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+int i;
+clrscr();
+for(i=1;i<=100000;i++)
+printf("%d\n",i);
+delay(5000);
+}
+</pre>
+<img src="questions images/iterative control structure/6i.jpg" width="400">
+<hr>
+<h2>Question 7</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+int n,i;
+clrscr();
+printf("Enter a number: ");
+scanf("%d",&n);
+for(i=1;i<=n;i++)
+printf("%d\n",i);
+delay(5000);
+}
+</pre>
+<img src="questions images/iterative control structure/7i.jpg" width="400">
+<hr>
+<h2>Question 8</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+int n,i;
+clrscr();
+printf("Enter a number: ");
+scanf("%d",&n);
+for(i=1;i<=100;i++)
+printf("%d\n",n);
+delay(5000);
+}
+</pre>
+<img src="questions images/iterative control structure/8i.jpg" width="400">
+<hr>
+<h2>Question 11</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+int n,r,x=0;
+clrscr();
+printf("Enter a number: ");
+scanf("%d",&n);
+while(n>0)
+{
+r=n%10;
+x=x*10+r;
+n=n/10;
+}
+printf("severse of entered number is = %d",x);
+delay(5000);
+}
+</pre>
+<img src="questions images/iterative control structure/11i.jpg" width="400">
+<hr>
+<h2>Question 13</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+int n,t,r,x=0;
+clrscr();
+printf("Enter a number: ");
+scanf("%d",&n);
+t=n;
+while(n>0)
+{
+r=n%10;
+x=x*10+r;
+n=n/10;
+}
+if(t==x)
+printf("It is palindrome");
+else
+printf("It is not a palindrome");
+delay(5000);
+}
+</pre>
+<img src="questions images/iterative control structure/13i.jpg" width="400">
+<hr>
+<h2>Question 14</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+int b,p,i,r=1;
+clrscr();
+printf("enter base for number: ");
+scanf("%d",&b);
+printf("enter power for number: ");
+scanf("%d",&p);
+for(i=1;i<=p;i++)
+r=r*b;
+printf("result for base and power = %d",r);
+delay(5000);
+}
+</pre>
+<img src="questions images/iterative control structure/14i.jpg" width="400">
+<hr>
+<h2>Question 15</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+int n;
+clrscr();
+printf("enter a number: ");
+scanf("%d",&n);
+if(n<0)
+n=n*-1;
+while(n>=10)
+n=n/10;
+printf("First digit = %d",n);
+delay(5000);
+}
+</pre>
+<img src="questions images/iterative control structure/15i.jpg" width="400">
+<hr>
+<h2>Question 18</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+int x,y,i;
+clrscr();
+printf("Enter two numbers: ");
+scanf("%d%d",&x,&y);
+if(x<=y)
+{
+for(i=x;i<=y;i++)
+printf("%d\n",i);
+}
+else
+{
+for(i=x;i>=y;i--)
+printf("%d\n",i);
+}
+delay(5000);
+}
+</pre>
+
+<h2>Question 19</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+char p[20];
+clrscr();
+printf("ennter password: ");
+scanf(" %20[^\n]",p);
+printf("password is = %s",p);
+delay(5000);
+}
+</pre>
+<img src="questions images/iterative control structure/18i.jpg" width="400">
+<hr>
+<h2>Question 20</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+int i;
+clrscr();
+for(i=1;i<=100;i++)
+{
+printf("%d\n",i);
+delay(1000);
+}
+delay(5000);
+}
+</pre>
+<img src="questions images/iterative control structure/19i.jpg" width="400">
+<hr>
+<h2>Question 21</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+int x=0,y=1,z;
+clrscr();
+while(x<=100)
+{
+printf("%d ",x);
+z=x+y;
+x=y;
+y=z;
+}
+delay(5000);
+}
+</pre>
+<img src="questions images/iterative control structure/21i.jpg" width="400">
+<hr>
+<h2>Question 24</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+int n,t,r,x=0,i,p,add=0;
+clrscr();
+printf("enter a number: ");
+scanf("%d",&n);
+t=n;
+while(t>0)
+{
+x++;
+t=t/10;
+}
+t=n;
+while(t>0)
+{
+r=t%10;
+p=1;
+for(i=1;i<=count;i++)
+p=p*r;
+add=add+p;
+t=t/10;
+}
+if(n==add)
+printf("It is armstrong number since abc=a^n+b^n...");
+else
+printf("not an Armstrong number");
+delay(5000);
+}
+</pre>
+<img src="questions images/iterative control structure/25is.jpg" width="400">
+<hr>
+
+<a href="index.html">Back to Home</a>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>nested-loops</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2>Question 1</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+int choice,i,j;
+clrscr();
+printf("print patternfor nested loop\n");
+printf("enter pattern choice");
+scanf("%d",&choice);
+switch(choice)
+{
+case 1:
+for(i=1;i<=3;i++)
+{
+for(j=1;j<=5;j++)
+{
+printf("1");
+}
+printf("\n");
+}
+break;
+default:
+printf("Invalid Choice");
+}
+delay(5000);
+}
+</pre>
+<img src="questions images/nested loop/1n.jpg" width="400">
+<hr>
+</body>
+</html>

@@ -1,0 +1,242 @@
+ 
+<!DOCTYPE html>
+<html>
+<head>
+<title>Operators</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Operators</h1>
+
+<h2>Question 1</h2>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void main()
+{
+int x=5,y;
+clrscr();
+y=++x;
+printf("x = %d",x);
+printf("\ny = %d",y);
+delay(5000);
+}
+</pre>
+<img src="questions images/operators/1o.jpg" width="400">
+<hr>
+<h2>Question 2</h2>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void main()
+{
+int x=5,y;
+clrscr();
+y=x++;
+printf("x = %d",x);
+printf("\ny = %d",y);
+delay(5000);
+}
+</pre>
+<img src="questions images/operators/2o.jpg" width="400">
+<hr>
+<h2>Question 3</h2>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void main()
+{
+int x=5,y;
+clrscr();
+y=x++;
+printf("x = %d",x);
+printf("\ny = %d",y);
+delay(5000);
+}
+</pre>
+<img src="questions images/operators/3o.jpg" width="400">
+<hr>
+<h2>Question 4</h2>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void main()
+{
+int x=5,y;
+clrscr();
+y=x--;
+printf("x = %d",x);
+printf("\ny = %d",y);
+delay(5000);
+}
+</pre>
+<img src="questions images/operators/4o.jpg" width="400">
+<hr>
+<h2>Question 5</h2>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void main()
+{
+int a,b;
+clrscr();
+printf("enter no. for add ");
+scanf("%d%d",&amp;a,&amp;b);
+printf("add = %d",a+b);
+printf("\n enter no. for subtract ");
+scanf("%d%d",&amp;a,&amp;b);
+printf("sub = %d",a-b);
+printf("\n enter no. for multiply ");
+scanf("%d%d",&amp;a,&amp;b);
+printf("multiply = %d",a*b);
+printf("\n enter no. for division ");
+scanf("%d%d",&amp;a,&amp;b);
+if(b!=0)
+printf("divide = %d",a/b);
+else
+printf("any number is not divisible by 0");
+printf("\n enter two no for remainder: ");
+scanf("%d%d",&amp;a,&amp;b);
+if(b!=0)
+printf("remainder = %d",a%b);
+else
+printf("remainder is not possible");
+delay(5000);
+}
+</pre>
+<img src="questions images/operators/5o.jpg" width="400">
+<hr>
+<h2>Question 6</h2>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void main()
+{
+int n,r;
+clrscr();
+printf("enter one number: ");
+scanf("%d",&amp;n);
+r=n%10;
+if(r&lt;0)
+r=r*-1;
+printf("last digit = %d",r);
+delay(5000);
+}
+</pre>
+<img src="questions images/operators/6o.jpg" width="400">
+<hr>
+<h2>Question 7</h2>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void main()
+{
+float n;
+int a;
+clrscr();
+printf("enter a float/decimal number: ");
+scanf("%f",&amp;n);
+a=(int)n;
+n=n-a;
+if(n&lt;0)
+n=n*-1;
+printf("right side of decimal = %f",n);
+delay(5000);
+}
+</pre>
+<img src="questions images/operators/7o.jpg" width="400">
+<hr>
+<h2>Question 8</h2>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void main()
+{
+int n,x;
+clrscr();
+printf("enter one number for finding cube: ");
+scanf("%d",&amp;n);
+x=n*n*n;
+printf("Cube = %d",x);
+delay(5000);
+}
+</pre>
+<img src="questions images/operators/8o.jpg" width="400">
+<hr>
+<h2>Question 9</h2>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void main()
+{
+float n;
+int r;
+clrscr();
+printf("enter a float/decimal number: ");
+scanf("%f",&amp;n);
+r=n+0.5;
+printf("rounded number = %d",r);
+delay(5000);
+}
+</pre>
+<img src="questions images/operators/9o.jpg" width="400">
+<hr>
+<h2>Question 10</h2>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void main()
+{
+char ch;
+clrscr();
+printf("enter a lowercase character: ");
+scanf(" %c",&amp;ch);
+if(ch&gt;='a' &amp;&amp; ch&lt;='z')
+ch=ch-32;
+printf("converted uppercase is = %c",ch);
+delay(5000);
+}
+</pre>
+<img src="questions images/operators/10o.jpg" width="400">
+<hr>
+<h2>Question 11</h2>
+<p>Same as Q19 in Strings</p>
+
+<h2>Question 12</h2>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void main()
+{
+float p,r,t,si;
+clrscr();
+printf("Enter principal amount: ");
+scanf("%f",&amp;p);
+printf("Enter rate: ");
+scanf("%f",&amp;r);
+printf("Enter time: ");
+scanf("%f",&amp;t);
+si=(p*r*t)/100;
+printf("simple Interest = %.2f",si);
+delay(5000);
+}
+</pre>
+<img src="questions images/operators/12o.jpg" width="400">
+<hr>
+<a href="index.html">Back to Home</a>
+
+</body>
+</html>

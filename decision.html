@@ -1,0 +1,517 @@
+<html>
+<head>
+<title>decision</title>
+<h1>Decision Control Structure</h1>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2>Question 1</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+int n;
+clrscr();
+printf("enter 1st number: ");
+scanf("%d",&n);
+if(n>0)
+printf("Positive");
+else if(n<0)
+printf("Negative");
+else
+printf("Zero");
+delay(5000);
+}
+</pre>
+<img src="questions images/decision control structure/1d.jpg" width="400">
+<hr>
+<h2>Question 2</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+int n;
+clrscr();
+printf("Enter a number: ");
+scanf("%d",&n);
+if(n%2==0)
+printf("Even");
+else
+printf("Odd");
+delay(5000);
+}
+</pre>
+<img src="questions images/decision control structure/2d.jpg" width="400">
+<hr>
+<h2>Question 3</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+int n;
+clrscr();
+printf("Enter a number: ");
+scanf("%d",&n);
+if(n<0)
+n=-n;
+if(n<=9)
+printf("1 digit");
+else if(n<=99)
+printf("2 digits");
+else if(n<=999)
+printf("3 digits");
+else if(n<=9999)
+printf("4 digits");
+else if(n<=99999)
+printf("5 digits");
+else
+printf("More than 5 digits");
+delay(5000);
+}
+</pre>
+<img src="questions images/decision control structure/3d.jpg" width="400">
+<hr>
+<h2>Question 4</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+int n;
+clrscr();
+printf("Enter marks: ");
+scanf("%d",&n);
+if(n>=0 && n<=40)
+printf("failed");
+else if(n>40 && n<=60)
+printf("C");
+else if(n>60 && n<=80)
+printf("B");
+else if(n>80 && n<=100)
+printf("A");
+else
+printf("please enter correcrt grade");
+delay(5000);
+}
+</pre>
+<img src="questions images/decision control structure/4d.jpg" width="400">
+<hr>
+<h2>Question 5</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+float n;
+clrscr();
+printf("Enter a number: ");
+scanf("%f",&n);
+if(n==(int)n)
+printf("not a decimal number");
+else
+printf("decimal number");
+delay(5000);
+}
+</pre>
+<img src="questions images/decision control structure/5d.jpg" width="400">
+<hr>
+<h2>Question 6</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+int n;
+clrscr();
+printf("Enter a number: ");
+scanf("%d",&n);
+if(n<0)
+n=n*-1;
+else if(n>0)
+n=n*-1;
+printf("converted number = %d",n);
+delay(5000);
+}
+</pre>
+<img src="questions images/decision control structure/6d.jpg" width="400">
+<hr>
+<h2>Question 7</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+char ch;
+clrscr();
+printf("enter a character to check if its alphabet: ");
+scanf("%c",&ch);
+if((ch>=65 && ch<=90) || (ch>=97 && ch<=122))
+printf("Alphabet");
+else
+printf("Not an alphabet");
+delay(5000);
+}
+</pre>
+<img src="questions images/decision control structure/7d.jpg" width="400">
+<hr>
+<h2>Question 8</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+int n;
+clrscr();
+printf("Enter a number: ");
+scanf("%d",&n);
+if(n<0)
+printf("square if the number is negative = %d",n*n);
+else if(n>0)
+{
+n=n+20;
+printf("incremented number by 20 = %d",n);
+}
+else
+printf("number = 0");
+delay(5000);
+}
+</pre>
+<img src="questions images/decision control structure/8d.jpg" width="400">
+<hr>
+<h2>Question 9</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+int n;
+clrscr();
+printf("Enter a number: ");
+scanf("%d",&n);
+if(n<0)
+printf("-ve number");
+else if(n>0)
+printf("+ve number");
+else
+printf("0");
+delay(5000);
+}
+</pre>
+<img src="questions images/decision control structure/9d.jpg" width="400">
+<hr>
+<h2>Question 10</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+int x,y;
+clrscr();
+printf("Enter two numbers: ");
+scanf("%d%d",&x,&y);
+if(x>y)
+printf("%d is greater",x);
+else if(y>x)
+printf("%d is greater",y);
+else
+printf("Both are equal");
+delay(5000);
+}
+</pre>
+<img src="questions images/decision control structure/10d.jpg" width="400">
+<hr>
+<h2>Question 11</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+int n;
+clrscr();
+printf("enter a number to check if its divisible by 4: ");
+scanf("%d",&n);
+if(n%4==0)
+printf("divisible by 4");
+else
+printf("not divisible by 4");
+delay(5000);
+}
+</pre>
+<img src="questions images/decision control structure/11d.jpg" width="400">
+<hr>
+<h2>Question 12</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+char x,y,a,b;
+clrscr();
+printf("Enter four characters: ");
+scanf(" %c %c %c %c",&x,&y,&a,&b);
+if(a==b && b==x && x==y)
+printf("All characters are equal");
+else
+printf("Characters are not equal");
+delay(5000);
+}
+</pre>
+<img src="questions images/decision control structure/12d.jpg" width="400">
+<hr>
+<h2>Question 13</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+int x,y,z;
+clrscr();
+printf("enter three numbers: ");
+scanf("%d%d%d",&x,&y,&z);
+if(x>=y && x>=z)
+printf("%d is greatest",x);
+else if(y>=z && y>=z)
+printf("%d is greatest",y);
+else
+printf("%d is greatest",z);
+delay(5000);
+}
+</pre>
+<img src="questions images/decision control structure/13d.jpg" width="400">
+<hr>
+<h2>Question 14</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+int x;
+clrscr();
+printf("enter no of days for months: ");
+scanf("%d",&n);
+if(n==30)
+printf("April, June, September, November");
+else if(n==31)
+printf("January, March, May, July, August, October, December");
+else if(n==28 || n==29)
+printf("February");
+else
+printf("There's no month with these number of days");
+delay(5000);
+}
+</pre>
+<img src="questions images/decision control structure/14d.jpg" width="400">
+<hr>
+<h2>Question 15</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+int n;
+clrscr();
+printf("Enter a one digit number: ");
+scanf("%d",&n);
+switch(n)
+{
+case 0: printf("zero"); break;
+case 1: printf("one"); break;
+case 2: printf("two"); break;
+case 3: printf("three"); break;
+case 4: printf("four"); break;
+case 5: printf("five"); break;
+case 6: printf("six"); break;
+case 7: printf("seven"); break;
+case 8: printf("eight"); break;
+case 9: printf("nine"); break;
+default: printf("only one digit numbers and just a number");
+}
+delay(5000);}
+</pre>
+<img src="questions images/decision control structure/15d.jpg" width="400">
+<hr>
+<h2>Question 16</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+char x,y;
+int z;
+clrscr();
+printf("enter 2 characters: ");
+scanf(" %c %c",&x,&y);
+if(x==y)
+printf("Both are same");
+else
+{
+z=x-y;
+if(z<0)
+z=z*-1;
+printf("difference is = %d",z);
+}
+delay(5000);
+}
+}
+</pre>
+<img src="questions images/decision control structure/16d.jpg" width="400">
+<hr>
+<h2>Question 17</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+int x,y,z;
+clrscr();
+printf("enter your three numbers: ");
+scanf("%d%d%d",&x,&y,&z);
+if(x>=y && x>=z)
+printf("%d is greatest",x);
+else if(y>=x && y>=z)
+printf("%d is greatest",y);
+else
+printf("%d is greatest",z);
+delay(5000);
+}
+</pre>
+<img src="questions images/decision control structure/17d.jpg" width="400">
+<hr>
+<h2>Question 18</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+int n,a,b;
+clrscr();
+printf("Enter a two digit number: ");
+scanf("%d",&n);
+if(n>=10 && n<=99)
+{
+a=n/10;
+b=n%10;
+switch(a)
+{
+case 1: printf("One "); break;
+case 2: printf("Two "); break;
+case 3: printf("Three "); break;
+case 4: printf("Four "); break;
+case 5: printf("Five "); break;
+case 6: printf("Six "); break;
+case 7: printf("Seven "); break;
+case 8: printf("Eight "); break;
+case 9: printf("Nine "); break;
+}
+switch(b)
+{
+case 0: printf("Zero"); break;
+case 1: printf("One"); break;
+case 2: printf("Two"); break;
+case 3: printf("Three"); break;
+case 4: printf("Four"); break;
+case 5: printf("Five"); break;
+case 6: printf("Six"); break;
+case 7: printf("Seven"); break;
+case 8: printf("Eight"); break;
+case 9: printf("Nine"); break;
+}
+}
+else
+printf("Invalid number");
+delay(5000);
+}
+</pre>
+<img src="questions images/decision control structure/18d.jpg" width="400">
+<hr>
+<h2>Question 19</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+char ch;
+clrscr();
+printf("enter a character to check if its alphabet: ");
+scanf("%c",&ch);
+if((ch>=65 && ch<=90) || (ch>=97 && ch<=122))
+printf("Alphabet");
+else
+printf("Not an alphabet");
+delay(5000);
+}
+</pre>
+<img src="questions images/decision control structure/19d.jpg" width="400">
+<hr>
+<h2>Question 20</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+int y;
+clrscr();
+printf("enter year in number: ");
+scanf("%d",&y);
+if(y%400==0)
+printf("leap year");
+else if(y%100==0)
+printf("not a leap year");
+else if(y%4==0)
+printf("leap year");
+else
+printf("not a leap year");
+delay(5000);
+}
+</pre>
+<img src="questions images/decision control structure/20d.jpg" width="400">
+<hr>
+<h2>Question 23</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+int l,b,area,perimeter;
+clrscr();
+printf("enter length and breadth: ");
+scanf("%d%d",&l,&b);
+area=l*b;
+perimeter=2*(l+b);
+printf("area = %d",area);
+printf("\nPerimeter = %d",perimeter);
+delay(5000);
+}
+</pre>
+<img src="questions images/decision control structure/23d.jpg" width="400">
+<hr>
+
+
+<a href="index.html">Back to Home</a>
+</body>
+</html>

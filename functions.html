@@ -1,0 +1,162 @@
+<html>
+<head>
+<title>Functions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Functions</h1>
+
+<h2>Question 1</h2>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void add(int a,int b)
+{
+a+b;
+}
+void sub(int a,int b)
+{
+a-b;
+}
+void mul(int a,int b)
+{
+a*b;
+}
+void divide(int a,int b)
+{
+(float)a/b;
+}
+void main()
+{
+int a,b;
+clrscr();
+printf("Enter 2 numbers for addition: ");
+scanf("%d%d",&amp;a,&amp;b);
+printf("addition = %d\n",add(a,b));
+printf("enter 2 no for subtraction: ");
+scanf("%d%d",&amp;a,&amp;b);
+printf("subtraction = %d\n",sub(a,b));
+printf("Enter 2 numbers for multiplication: ");
+scanf("%d%d",&amp;a,&amp;b);
+printf("multiplication = %d\n",mul(a,b));
+printf("Enter 2 numbers for division: ");
+scanf("%d%d",&amp;a,&amp;b);
+if(b!=0)
+{printf("division = %.2f\n",divide(a,b));
+}
+else
+printf("division not possible\n");
+delay(5000);
+}
+</pre>
+<img src="questions images/functions/1f.jpg" width="400">
+<hr>
+<h2>Question 2</h2>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+int sum(int a)
+{
+int i,s=0;
+for(i=0;i&lt;10;i++)
+{
+s=s+a[i];
+}
+s;
+}
+void main()
+{
+int a[10],i;
+clrscr();
+printf("Enter 10 numbers:\n");
+for(i=0;i&lt;10;i++)
+{
+scanf("%d",&amp;a[i]);
+}
+printf("Sum = %d",sum(a));
+delay(5000);
+}
+</pre>
+<img src="questions images/functions/2f.jpg" width="400">
+<hr>
+<h2>Question 5</h2>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void swap(int *a,int *b)
+{
+int k;
+k=*a;
+*a=*b;
+*b=k;
+}
+void main()
+{
+int a,b;
+clrscr();
+printf("enter two numbers: ");
+scanf("%d%d",&amp;a,&amp;b);
+printf("before swapping= a=%d b=%d\n",a,b);
+swap(&amp;a,&amp;b);
+printf("after swapping= a=%d b=%d",a,b);
+delay(5000);
+}
+</pre>
+<img src="questions images/functions/5f.jpg" width="400">
+<hr>
+<h2>Question 6</h2>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+void swap(int a,int b)
+{
+int k;
+k=a;
+a=b;
+b=k;
+printf("locally: a=%d b=%d\n",a,b);
+}
+void main()
+{
+int a,b;
+clrscr();
+printf("enter 2 numbers: ");
+scanf("%d%d",&amp;a,&amp;b);
+printf("before swapping: a=%d b=%d\n",a,b);
+swap(a,b);
+printf("after swapping: a=%d b=%d",a,b);
+delay(5000);
+}
+</pre>
+<img src="questions images/functions/6f.jpg" width="400">
+<hr>
+<h2>Question 8</h2>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+int cube(int n)
+{
+n*n*n;
+}
+void main()
+{
+int n;
+clrscr();
+printf("enter a number: ");
+scanf("%d",&amp;n);
+printf("Cube = %d",cube(n));
+delay(5000);
+}
+</pre>
+<img src="questions images/functions/8f.jpg" width="400">
+<hr>
+<a href="index.html">Back to Home</a>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<html>
+<head>
+<title>Two Dimensional Array</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Two Dimensional Array</h1>
+
+<h2>Question 1</h2>
+<pre>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+void main()
+{
+int a[2][2], i, j;
+clrscr();
+printf("enter:\n");
+for(i = 0; i < 2; i++)
+{
+for(j = 0; j < 2; j++)
+{
+scanf("%d", &a[i][j]);
+}
+}
+printf("enter matrix is:\n");
+for(i = 0; i < 2; i++)
+{
+for(j = 0; j < 2; j++)
+{
+printf("%d ", a[i][j]);
+}
+printf("\n");
+}
+delay(5000);
+}
+</pre>
+<img src="questions images/multi dimensional array/1m.jpg" width="400">
+<hr>
+
+<h2>Question 2</h2>
+<pre>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+void main()
+{
+int a[2][2], i, j;
+clrscr();
+printf("enter:");
+for(i = 0; i < 2; i++)
+{
+for(j = 0; j < 2; j++)
+{
+scanf("%d", &a[i][j]);
+}
+}
+printf("matrix for transpose:\n");
+for(i = 0; i < 2; i++)
+{
+for(j = 0; j < 2; j++)
+{
+printf("%d ", a[j][i]);
+}
+printf("\n");
+}
+delay(5000);
+}
+</pre>
+<img src="questions images/multi dimensional array/2m.jpg" width="400">
+<hr>
+
+<h2>Question 3</h2>
+<pre>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+void main()
+{
+int a[2][2], b[2][2], c[2][2];
+int i, j;
+clrscr();
+printf("enter 1st matrix:\n");
+for(i = 0; i < 2; i++)
+{
+for(j = 0; j < 2; j++)
+{
+scanf("%d", &a[i][j]);
+}
+}
+printf("enter 2nd matrix:\n");
+for(i = 0; i < 2; i++)
+{
+for(j = 0; j < 2; j++)
+{
+scanf("%d", &b[i][j]);
+}
+}
+for(i = 0; i < 2; i++)
+{
+for(j = 0; j < 2; j++)
+{
+c[i][j] = a[i][j] + b[i][j];
+}
+}
+printf("Addition\n");
+for(i = 0; i < 2; i++)
+{
+for(j = 0; j < 2; j++)
+{
+printf("%d ", c[i][j]);
+}
+printf("\n");
+}
+delay(5000);
+}
+</pre>
+<img src="questions images/multi dimensional array/3m.jpg" width="400">
+<hr>
+
+<h2>Question 4</h2>
+<pre>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+void main()
+{
+int a[2][2], b[2][2], c[2][2];
+int i, j;
+clrscr();
+printf("enter 1st matrix:\n");
+for(i = 0; i < 2; i++)
+{
+for(j = 0; j < 2; j++)
+{
+scanf("%d", &a[i][j]);
+}
+}
+printf("enter 2nd matrix:\n");
+for(i = 0; i < 2; i++)
+{
+for(j = 0; j < 2; j++)
+{
+scanf("%d", &b[i][j]);
+}
+}
+for(i = 0; i < 2; i++)
+{
+for(j = 0; j < 2; j++)
+{
+c[i][j] = a[i][j] - b[i][j];
+}
+}
+printf("subtract:\n");
+for(i = 0; i < 2; i++)
+{
+for(j = 0; j < 2; j++)
+{
+printf("%d ", c[i][j]);
+}
+printf("\n");
+}
+delay(5000);
+}
+</pre>
+<img src="questions images/multi dimensional array/4m.jpg" width="400">
+<hr>
+
+<h2>Question 5</h2>
+<pre>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+void main()
+{
+int a[2][2], b[2][2], c[2][2];
+int i, j, k;
+clrscr();
+printf("enter 1st matrix:\n");
+for(i = 0; i < 2; i++)
+{
+for(j = 0; j < 2; j++)
+{
+scanf("%d", &a[i][j]);
+}
+}
+printf("enter 2nd matrix:\n");
+for(i = 0; i < 2; i++)
+{
+for(j = 0; j < 2; j++)
+{
+scanf("%d", &b[i][j]);
+}
+}
+for(i = 0; i < 2; i++)
+{
+for(j = 0; j < 2; j++)
+{
+c[i][j] = 0;
+for(k = 0; k < 2; k++)
+{
+c[i][j] = c[i][j] + a[i][k] * b[k][j];
+}
+}
+}
+printf("multiplication:\n");
+for(i = 0; i < 2; i++)
+{
+for(j = 0; j < 2; j++)
+{
+printf("%d ", c[i][j]);
+}
+printf("\n");
+}
+delay(5000);
+}
+</pre>
+<img src="questions images/multi dimensional array/5m.jpg" width="400">
+<hr>
+<p><a href="index.html">Back to Home</a></p>
+
+</body>
+</html>
