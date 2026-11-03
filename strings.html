@@ -1,0 +1,419 @@
+<html>
+<head>
+<title>Strings</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Strings</h1>
+
+<h2>Question 1</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+char str[20];
+int i;
+clrscr();
+printf("Enter a string: ");
+scanf("%s",str);
+for(i=0;str[i]!='\0';i++)
+{
+if(str[i]>='a' && str[i]<='z')
+str[i]=str[i]-32;
+}
+printf("Uppercase = %s",str);
+delay(5000);
+}
+</pre>
+
+<h3>Question 1</h3>
+<img src="questions images/strings/1s.jpg" width="400">
+<hr>
+<h2>Question 2</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+char str[20];
+int i;
+clrscr();
+printf("Enter a string: ");
+scanf("%s",str);
+for(i=0;str[i]!='\0';i++)
+{
+if(str[i]>='A' && str[i]<='Z')
+str[i]=str[i]+32;
+}
+printf("Lowercase = %s",str);
+delay(5000);
+}
+</pre>
+<img src="questions images/strings/2s.jpg" width="400">
+<hr>
+<h2>Question 3</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+char str[20];
+int i;
+clrscr();
+printf("Enter a string: ");
+scanf("%s",str);
+if(str[0]>='a' && str[0]<='z')
+str[0]=str[0]-32;
+for(i=1;str[i]!='\0';i++)
+{
+if(str[i]>='A' && str[i]<='Z')
+str[i]=str[i]+32;
+}
+printf("Sentence case = %s",str);
+delay(5000);
+}
+</pre>
+<img src="questions images/strings/3s.jpg" width="400">
+<hr>
+<h2>Question 4</h2>
+<p> Enter a string from user and convert into title case</p>
+<hr>
+<h2>Question 5</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+char str[20];
+int i;
+clrscr();
+printf("enter a string: ");
+scanf("%s",str);
+for(i=0;str[i]!='\0';i++)
+{
+if(str[i]>='A' && str[i]<='Z')
+str[i]=str[i]+32;
+else if(str[i]>='a' && str[i]<='z')
+str[i]=str[i]-32;
+}
+printf("toggle case = %s",str);
+delay(5000);
+}
+</pre>
+<img src="questions images/strings/5s.jpg" width="400">
+<hr>
+<h2>Question 6</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+#include<string.h>
+void main()
+{
+char str[20];
+int i;
+clrscr();
+printf("enter a string: ");
+scanf("%s",str);
+i=strlen(str);
+printf("length of the string is = %d",i);
+delay(5000);
+}
+</pre>
+<img src="questions images/strings/6s.jpg" width="400">
+<hr>
+<h2>Question 7</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+#include<string.h>
+void main()
+{
+char a[20],b[30];
+int x;
+clrscr();
+printf("enter 1st string: ");
+scanf("%s",a);
+printf("enter 2nd string: ");
+scanf("%s",b);
+x=strcmp(a,b);
+if(x==0)
+printf("strings are equal");
+else
+printf("strings are not equal");
+delay(5000);
+}
+</pre>
+<img src="questions images/strings/7s.jpg" width="400">
+<hr>
+<h2>Question 8</h2>
+<pre>
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+#include<string.h>
+void main() {
+char str1[20], str2[20];
+clrscr();
+printf("enter 1st string: ");
+scanf("%s", str1);
+printf("enter 2nd string: ");
+scanf("%s", str2);
+strcat(str1, str2);
+printf("\n cancatenated string= %s", str1);
+delay(5000);
+}
+</pre>
+<img src="questions images/strings/8s.jpg" width="400">
+<hr>
+<h2>Question 9</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+#include<string.h>
+void main()
+{
+char a[20],b[20];
+clrscr();
+printf("enter a string: ");
+scanf("%s",a);
+strcpy(b,a);
+printf("copied string = %s",b);
+delay(5000);
+}
+</pre>
+<img src="questions images/strings/9s.jpg" width="400">
+<hr>
+<h2>Question 11</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+char str[20];
+int i;
+clrscr();
+printf("Enter a string: ");
+scanf("%s",str);
+for(i=0;str[i]!='\0';i++)
+printf("%c\n",str[i]);
+delay(5000);
+}
+</pre>
+<img src="questions images/strings/11s.jpg" width="400">
+<hr>
+<h2>Question 12</h2>
+<p>Enter the string from user and print each character in new line</p>
+<hr>
+<h2>Question 13</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+#include<string.h>
+void main()
+{
+char a[20],b[20];
+int i,d;
+clrscr();
+printf("enter 1st string: ");
+scanf("%s",a);
+printf("enter 2nd string: ");
+scanf("%s",b);
+if(strlen(a)==strlen(b))
+{
+for(i=0;a[i]!='\0';i++)
+{
+d=a[i]-b[i];
+if(d<0)
+d=d*-1;
+printf("difference = %d\n",d);
+}
+}
+else
+printf("strings should be equl");
+delay(5000);
+}
+</pre>
+<img src="questions images/strings/13s.jpg" width="400">
+<hr>
+<h2>Question 14</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+char str[20],ch;
+int i,x=0;
+clrscr();
+printf("enter a string: ");
+scanf("%s",str);
+printf("enter a character: ");
+scanf(" %c",&ch);
+for(i=0;str[i]!='\0';i++)
+{
+if(str[i]==ch)
+{
+x=1;
+break;
+}
+}
+if(x==1)
+printf("Character exists");
+else
+printf("Character does not exist");
+delay(5000);
+}
+</pre>
+<img src="questions images/strings/14s.jpg" width="400">
+<hr>
+<h2>Question 15</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+char str[20],ch;
+int i,x=0;
+clrscr();
+printf("Enter a string: ");
+scanf("%s",str);
+printf("Enter a character: ");
+scanf(" %c",&ch);
+for(i=0;str[i]!='\0';i++)
+{
+if(str[i]==ch)
+{
+printf("index of the string = %d",i);
+x=1;
+break;
+}
+}
+if(x==0)
+printf("Character not found");
+delay(5000);
+}
+</pre>
+<img src="questions images/strings/15s.jpg" width="400">
+<hr>
+<h2>Question 16</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+char str[20];
+int i,x=0;
+clrscr();
+printf("Enter a string: ");
+scanf("%s",str);
+for(i=0;str[i]!='\0';i++)
+{
+if(str[i]=='a' || str[i]=='e' || str[i]=='i' || str[i]=='o' || str[i]=='u' || str[i]=='A' || str[i]=='E' || str[i]=='I' || str[i]=='O' || str[i]=='U')
+x=x+1;
+}
+printf("total vowels in tsirngs = %d",x);
+delay(5000);
+}
+</pre>
+<img src="questions images/strings/16s.jpg" width="400">
+<hr>
+<h2>Question 17</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+#include<string.h>
+void main()
+{
+char str[20];
+int n;
+clrscr();
+printf("Enter a string: ");
+scanf("%s",str);
+printf("Enter index number: ");
+scanf("%d",&n);
+if(n>=0 && n<strlen(str))
+printf("Character = %c",str[n]);
+else
+printf("invalid");
+delay(5000);
+}
+</pre>
+<img src="questions images/strings/17s.jpg" width="400">
+<hr>
+<h2>Question 18</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+#include<string.h>
+void main()
+{
+char a[20],b[20];
+int i,j;
+clrscr();
+printf("Enter a string: ");
+scanf("%s",a);
+j=strlen(a)-1;
+for(i=0;i<strlen(a);i++)
+{
+b[i]=a[j];
+j--;
+}
+b[i]='\0';
+if(strcmp(a,b)==0)
+printf("Palindrome");
+else
+printf("Not palindrome");
+delay(5000);
+}
+</pre>
+<img src="questions images/strings/18s.jpg" width="400">
+<hr>
+<h2>Question 19</h2>
+<pre>
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+void main()
+{
+int roll,num1,num2,num3,num4,num5,t;
+char name[50],c[20];
+clrscr();
+printf("enter roll number: ");
+scanf("%d",&roll);
+printf("enter name: ");
+scanf("%s",name);
+printf("enter class: ");
+scanf("%s",c);
+printf("enter marks of 5 subjects: ");
+scanf("%d%d%d%%d",&num1,&num2,&num3,&num4,&num5);
+t=num1+num2+num3+num4+num5;
+printf("\nRoll Number = %d",roll);
+printf("\nName = %s",name);
+printf("\nClass = %s",c);
+printf("\nTotal Marks = %d",t);
+delay(5000);
+}
+</pre>
+<img src="questions images/strings/19s.jpg" width="400">
+<hr>
+<p><a href="index.html">Back to Home</a></p>
+
+</body>
+</html>
