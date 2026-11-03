@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>recursion</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Question 1</h2>
+<pre>
+#include &ltstdio.h&gt
+#include &ltconio.h&gt
+#include &ltdos.h&gt
+
+void add(int n)
+{
+if(n==0)
+return;
+printf("%d ",n);
+add(n-1);
+}
+
+void main()
+{
+clrscr();
+add(5);
+delay(5000);
+}
+</pre>
+<img src="1r.jpg" width="400">
+<hr>
+
+<h2>Question 2</h2>
+<pre>
+#include &ltstdio.h&gt
+#include &ltconio.h&gt
+#include &ltdos.h&gt
+int n=1;
+
+void display()
+{
+if(n<=5)
+{
+printf("%d ",n);
+n++;
+display();
+}
+}
+
+void main()
+{
+clrscr();
+display();
+delay(5000);
+}
+</pre>
+<img src="2r.jpg" width="400">
+<hr>
+
+<h2>Question 3</h2>
+<pre>
+#include &ltstdio.h&gt
+#include &ltconio.h&gt
+#include &ltdos.h&gt
+
+void display(int n)
+{
+int x=n;
+if(n>0)
+{
+printf("%d ",x);
+display(n-1);
+}
+}
+
+void main()
+{
+clrscr();
+display(5);
+delay(5000);
+}
+</pre>
+<img src="3r.jpg" width="400">
+<hr>
+
+</body>
+</html>

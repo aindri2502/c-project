@@ -1,0 +1,324 @@
+<html>
+<head>
+<title>file-handling</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Question 1</h2>
+<pre>
+#include &ltstdio.h&gt
+#include &ltconio.h&gt
+#include &ltdos.h&gt
+
+void main()
+{
+FILE *f1;
+char fname[20],data[50];
+clrscr();
+
+printf("file name ");
+scanf("%s",fname);
+
+printf("data ");
+scanf("%s",data);
+
+f1=fopen(fname,"w");
+
+fprintf(f1,"%s",data);
+
+fclose(f1);
+
+delay(5000);
+}
+</pre>
+<img src="1fh.jpg" width="400">
+<hr>
+
+<h2>Question 2</h2>
+<pre>
+#include &ltstdio.h&gt
+#include &ltconio.h&gt
+#include &ltdos.h&gt
+
+void main()
+{
+FILE *f1;
+char fname[20],ch;
+clrscr();
+
+printf("file name: ");
+scanf("%s",fname);
+
+f1=fopen(fname,"w");
+
+do
+{
+printf("Enter character: ");
+scanf(" %c",&ch);
+
+if(ch>='a' && ch<='z')
+ch=ch-32;
+
+fputc(ch,f1);
+
+printf("continue(Y/N)? ");
+scanf(" %c",&ch);
+}
+while(ch=='y' || ch=='Y');
+
+fclose(f1);
+
+delay(5000);
+}
+</pre>
+<img src="2fh.jpg" width="400">
+<hr>
+
+<h2>Question 3</h2>
+<pre>
+#include &ltstdio.h&gt
+#include &ltconio.h&gt
+#include &ltdos.h&gt
+void main()
+{
+FILE *f1;
+char fname[20],ch,data;
+clrscr();
+
+printf("Enter file name: ");
+scanf("%s",fname);
+
+f1=fopen(fname,"w");
+
+do
+{
+printf("Enter character: ");
+scanf(" %c",&ch);
+
+fputc(ch,f1);
+
+printf("Continue(Y/N)? ");
+scanf(" %c",&data);
+}
+while(data=='y' || data=='Y');
+
+fclose(f1);
+
+delay(5000);
+}
+</pre>
+<img src="3fh.jpg" width="400">
+<hr>
+
+<h2>Question 4</h2>
+<pre>
+#include &ltstdio.h&gt
+#include &ltconio.h&gt
+#include &ltdos.h&gt
+
+void main()
+{
+FILE *f1,*f2;
+char fname[20],fname2[20],data[50];
+int x;
+clrscr();
+
+printf("file name= ");
+scanf("%s",fname);
+
+printf("data= ");
+scanf("%s",data);
+
+f1=fopen(fname,"w");
+fprintf(f1,"%s",data);
+fclose(f1);
+
+printf("2nd file name= ");
+scanf("%s",fname2);
+
+f1=fopen(fname,"r");
+f2=fopen(fname2,"w");
+
+while((x=fgetc(f1))!=-1)
+{
+fputc(x,f2);
+}
+
+fclose(f1);
+fclose(f2);
+
+printf("file copied");
+
+delay(5000);
+}
+</pre>
+<img src="4fh.jpg" width="400">
+<hr>
+
+<h2>Question 5</h2>
+<pre>
+#include &ltstdio.h&gt
+#include &ltconio.h&gt
+#include &ltdos.h&gt
+
+void main()
+{
+FILE *f1;
+char fname[20],fname1[20],data[50];
+clrscr();
+
+printf("file name: ");
+scanf("%s",fname);
+
+printf("data: ");
+scanf("%s",data);
+
+f1=fopen(fname,"w");
+fprintf(f1,"%s",data);
+fclose(f1);
+
+printf("new file name: ");
+scanf("%s",fname1);
+
+rename(fname,fname1);
+
+printf("file renamed");
+
+delay(5000);
+}
+</pre>
+<img src="5fh.jpg" width="400">
+<hr>
+
+<h2>Question 6</h2>
+<pre>
+#include &ltstdio.h&gt
+#include &ltconio.h&gt
+#include &ltdos.h&gt
+
+void main()
+{
+FILE *f1,*f2,*f3;
+char file1[20],file2[20],file3[20];
+int x;
+clrscr();
+
+printf("Enter first file name: ");
+scanf("%s",file1);
+
+printf("Enter second file name: ");
+scanf("%s",file2);
+
+printf("Enter third file name: ");
+scanf("%s",file3);
+
+f1=fopen(file1,"r");
+f2=fopen(file2,"r");
+f3=fopen(file3,"w");
+
+while((x=fgetc(f1))!=-1)
+{
+fputc(x,f3);
+}
+
+while((x=fgetc(f2))!=-1)
+{
+fputc(x,f3);
+}
+
+fclose(f1);
+fclose(f2);
+fclose(f3);
+
+printf("files concatenated");
+
+delay(5000);
+}
+</pre>
+<img src="6fh.jpg" width="400">
+<hr>
+
+<h2>Question 7</h2>
+<pre>
+#include &ltstdio.h&gt
+#include &ltconio.h&gt
+#include &ltdos.h&gt
+
+void main()
+{
+FILE *f1;
+char fname[20],data[50];
+int x,y=0;
+clrscr();
+
+printf("file name: ");
+scanf("%s",fname);
+
+printf("data: ");
+scanf("%s",data);
+
+f1=fopen(fname,"w");
+fprintf(f1,"%s",data);
+fclose(f1);
+
+f1=fopen(fname,"r");
+
+while((x=fgetc(f1))!=-1)
+{
+y++;
+}
+
+fclose(f1);
+
+printf("total characters in the file= %d",y);
+
+delay(5000);
+}
+</pre>
+<img src="7fh.jpg" width="400">
+<hr>
+
+<h2>Question 8</h2>
+<pre>
+#include &ltstdio.h&gt
+#include &ltconio.h&gt
+#include &ltdos.h&gt
+
+void main()
+{
+FILE *f1;
+char fname[20],data[50],word[20];
+int y=0;
+clrscr();
+
+printf("file name= ");
+scanf("%s",fname);
+
+printf("data= ");
+scanf("%s",data);
+
+f1=fopen(fname,"w");
+fprintf(f1,"%s",data);
+fclose(f1);
+
+f1=fopen(fname,"r");
+
+while(fscanf(f1,"%s",word)!=-1)
+{
+y++;
+}
+
+fclose(f1);
+
+printf("total words = %d",y);
+
+delay(5000);
+}
+</pre>
+<img src="8fh.jpg" width="400">
+<hr>
+
+</body>
+</html>

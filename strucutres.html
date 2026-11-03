@@ -1,0 +1,138 @@
+<html>
+<head>
+<title>structures</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Question 1</h2>
+<pre>
+#include &ltstdio.h&gt
+#include &ltconio.h&gt
+#include &ltdos.h&gt
+
+struct employee
+{
+int id;
+char name[20];
+char designation[20];
+};
+
+void main()
+{
+struct employee ep[5];
+int i;
+clrscr();
+
+for(i=0;i<5;i++)
+{
+printf("\nPlease give your employee id= ");
+scanf("%d",&ep[i].id);
+
+printf("name= ");
+scanf("%s",ep[i].name);
+
+printf("designation= ");
+scanf("%s",ep[i].designation);
+}
+
+for(i=0;i<5;i++)
+{
+printf("%d %s %s\n",ep[i].id,ep[i].name,ep[i].designation);
+}
+
+delay(5000);
+}
+</pre>
+<img src="1st.jpg" width="400">
+<hr>
+
+<h2>Question 2</h2>
+<pre>
+#include &ltstdio.h&gt
+#include &ltconio.h&gt
+#include &ltdos.h&gt
+struct employee
+{
+int id;
+char name[20];
+char designation[20];
+};
+
+void main()
+{
+struct employee ep[5];
+int i;
+clrscr();
+
+for(i=0;i<5;i++)
+{
+printf("\nPlease give your employee id= ");
+scanf("%d",&ep[i].id);
+
+printf("name= ");
+scanf("%s",ep[i].name);
+
+printf("designation= ");
+scanf("%s",ep[i].designation);
+}
+
+for(i=0;i<5;i++)
+{
+printf("%s\n",ep[i].name);
+}
+
+delay(5000);
+}
+</pre>
+<img src="2st.jpg" width="400">
+<hr>
+
+<h2>Question 3</h2>
+<pre>
+#include &ltstdio.h&gt
+#include &ltconio.h&gt
+#include &ltdos.h&gt
+
+struct employee
+{
+int id;
+char name[20];
+char designation[20];
+};
+
+void main()
+{
+struct employee ep[5];
+int i,j;
+clrscr();
+
+for(i=0;i<5;i++)
+{
+printf("\nPlease give your employee id= ");
+scanf("%d",&ep[i].id);
+
+printf("name= ");
+scanf("%s",ep[i].name);
+
+printf("designation= ");
+scanf("%s",ep[i].designation);
+}
+
+for(i=0;i<5;i++)
+{
+for(j=0;ep[i].name[j]!='\0';j++)
+{
+printf("%d %c\n",ep[i].id,ep[i].name[j]);
+}
+}
+
+delay(5000);
+}
+</pre>
+<img src="3st.jpg" width="400">
+<hr>
+
+</body>
+</html>
